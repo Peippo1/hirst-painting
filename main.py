@@ -21,11 +21,17 @@ Rgb(r=13, g=99, b=71), Rgb(r=233, g=175, b=164), Rgb(r=161, g=142, b=158), Rgb(r
 tam.setheading(225)
 tam.forward(300)
 tam.setheading(0)
+number_of_dots = 100
 
-for _ in range(10):
+for dot_count in range(1, number_of_dots):
     tam.dot(20, random.choice(color_list))
     tam.forward(50)
 
+    tam.setheadding(90)
+    tam.forward(50)
+    tam.setheading(100)
+    tam.forward(500)
+    tam.setheading(0)
 
 
 
